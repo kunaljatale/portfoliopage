@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>portfolio
+    </title>
+   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(3, 3, 53);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #left {
+            font-size: 2rem;
+        }
+
+        #right {
+            /* margin-top: 20px; */
+            /* height: 50px; */
+            /* width: 100%; */
+            /* background-color: rgb(92, 13, 138); */
+
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(30, 30, 88);
+
+        }
+
+        /* ul{
+           list-style: none;       
+         }*/
+        nav ul {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        li a {
+            color: lavender;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            cursor: pointer;
+            color: rgb(94, 59, 235);
+            font-size: 18px;
+        }
+
+        #firstsection {
+            /* margin-top: 30px; */
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            /* align-items: center; */
+
+        }
+
+        #firstsection>div {
+
+            width: 30%;
+
+
+        }
+
+        #leftsection {
+            /* background-color: red;  */
+            width: 30%;
+            font-size: 40px;
+            margin: 60px 0;
+
+
+        }
+
+        #rightsection img {
+            /* background-color: red; */
+            width: 500px;
+            /* margin: 0% 0; */
+
+        }
+
+        #kunal {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+            font-size: 30px;
+        }
+
+        #secsecond {
+            /* max-width: 20px; */
+            margin-left: 100px;
+            /* font-size: 15px; */
+            height: 1000px;
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(33, 29, 99);
+            height: 1.2px;
+            margin: 40px 15px;
+            margin-bottom: 30px;
+        }
+
+        #textgray {
+            color: rgb(92, 90, 90);
+            font-size: 15px;
+        }
+
+        #box {
+            background-color: aliceblue;
+            height: 2px;
+            width: 80vw;
+
+            margin: 56px 0;
+
+
+        }
+
+        #secsecond #box1 {
+            background-color: white;
+            height: 2px;
+            width: 76vw;
+            margin: 56px 0;
+            display: flex;
+        }
+
+
+        #mix {
+            /* border: 1px solid red; */
+            font-size: 16px;
+            margin-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #secsecond h1 {
+            /* color: rgb(94, 59, 235); */
+            color: aqua;
+        }
+
+        #secsecond #vertical {
+            height: 83px;
+            /* margin-bottom: 3px; */
+            background-color: aliceblue;
+            width: 1px;
+            /* display: flex; */
+            /* justify-content: space-around; */
+            margin: 0 120px;
+        }
+
+        #image-top {
+            position: relative;
+            width: 23px;
+            /* height: 23px;  */
+            top: -25px;
+            left: -15px;
+        }
+
+        #vertical-title {
+            position: relative;
+            top: 54px;
+            left: -2px;
+            width: 20px;
+            height: 6px;
+            /* margin-bottom:130px; */
+
+            /* "vertical-ti */
+            /* background-color:red; */
+
+        }
+
+        #vertical-text {
+            /* background-color: red; */
+            position: relative;
+            top: 70px;
+            left: -4px;
+            /* bottom: 88px; */
+            font-size: 11px;
+            color: rgb(94, 59, 235);
+            width: 130px;
+            height: 120px;
+            color: tomato;
+        }
+
+        #secsecond #box2 {
+            background-color: white;
+            height: 2px;
+            width: 85vw;
+            margin: 56px 0;
+            display: flex;
+        }
+
+
+        #mix {
+            /* border: 1px solid red; */
+            font-size: 16px;
+            margin-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #secsecond h1 {
+            color: rgb(94, 59, 235);
+            /* color: aqua; */
+        }
+
+        #secsecond #vertical {
+            height: 83px;
+            /* margin-bottom: 3px; */
+            background-color: aliceblue;
+            width: 1px;
+            /* display: flex; */
+            /* justify-content: space-around; */
+            margin: 0 120px;
+        }
+
+        #image-top2 {
+            position: relative;
+            width: 23px;
+            /* height: 23px;  */
+            top: -25px;
+            left: -15px;
+        }
+
+        #vertical-title {
+            position: relative;
+            top: 54px;
+            left: -2px;
+            width: 150px;
+            height: 6px;
+            /* margin-bottom:130px; */
+
+            /* "vertical-ti */
+            /* background-color:red; */
+
+        }
+
+        #vertical-text {
+            /* background-color: red; */
+            position: relative;
+            top: 80px;
+            left: -4px;
+            /* bottom: 88px; */
+            font-size: 13px;
+            color: rgb(94, 59, 235);
+            width: 130px;
+            height: 120px;
+            color: rgb(184, 124, 114);
+        }
+
+        #title-skill {
+            position: relative;
+            top: 140px;
+        }
+
+        #title-about {
+            position: relative;
+            top: 250px;
+
+            /* background-color: aliceblue; */
+
+            /* width: 40px; */
+            /* height: 1px ; */
+
+
+        }
+
+        #box3 {
+
+            border: 2px solid black;
+            border-radius: 20px;
+            /* margin: 50px 50px; */
+            background-color: rgb(16, 13, 71);
+            color: rgb(119, 30, 202);
+
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 95px;
+            text-align: center;
+            /* margin-bottom: 0px; */
+            margin-right: 900px;
+            height: 180px;
+            padding: 2px 2px;
+        }
+
+        #box3:hover {
+            color: rgb(111, 68, 151);
+            cursor: pointer;
+            background-color: rgb(10, 9, 36);
+            text-shadow: 2px 3px 3px blue;
+        }
+
+        #name1 {
+            margin-top: 5px;
+            /* margin-left:-80px ; */
+            margin-bottom: 20px;
+        }
+
+        #name2 {
+            margin-bottom: 20px;
+        }
+
+        #name3 {
+            margin-bottom: 20px;
+        }
+
+        #name4 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgba(2, 2, 34, 0.863);
+            height: 200px;
+        }
+
+        #logo {
+            /* display: inline; */
+            padding: 5px 5px;
+            font-size: 30px;
+            text-shadow: 4px 3px 5px rgb(128, 60, 60);
+            height: 160px;
+            /* width: 400px; */
+            /* background-color: brown; */
+
+        }
+
+        #por {
+            font-size: 15px;
+        }
+
+        #right {
+            color: grey;
+            text-align: center;
+            /* margin-left: 20px; */
+            /* margin-bottom: -50px; */
+
+        }
+
+        #top {
+
+            font-size: 15px;
+            margin-left: 1200px;
+            text-shadow: none;
+            color: gray;
+            background-color: rgb(179, 12, 23);
+
+            margin-top: -90px;
+        }
+
+        #top {
+            cursor: pointer;
+        }
+        #btn1{
+                   background-color:rgb(15, 15, 110);
+                   padding: 3px;
+                   /* border: 1px solid white; */
+                   color: azure;
+                      border-radius: 6px; 
+        }
+        #btn2{
+            background-color:rgb(15, 15, 110);
+                   padding: 3px;
+                   /* border: 1px solid white; */
+                   color: azure;
+                      border-radius: 6px; 
+        }
+        #btn1:hover{
+              cursor: pointer;
+              background-color: rgb(10, 9, 36);
+            /* text-shadow: 2px 3px 3px blue; */
+
+        }
+        #btn2:hover{
+            cursor: pointer;
+            background-color: rgb(10, 9, 36);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div id="left">portfolio</div>
+            <div id="right">
+                <ul>
+                    <li class="bi bi-house-door"><a href="/"> Home</a></li>
+                    
+                    
+                    <li class="bi-briefcase" ><a href=""> Projects</a></li>
+                    <li class="bi bi-gear"><a href=""> Services</a></li>
+                    <li class="bi bi-phone"><a href=""> Contact me</a></li>
+                    <li class="bi bi-info-circle"><a href=""> About</a></li> 
+                </ul>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <section id="firstsection">
+            <div id="leftsection">HI,My name is
+                <span id="kunal"> Kunal</span>
+                <div> i am a web developer</div>
+                <span id="element"></span>
+            <div id="buttons">
+                <button id="btn1">Download Resume</button>
+                <button id="btn2">Visit Github</button>
+
+            </div>
+            <!-- <div id="buttons2"></div> -->
+            </div>
+
+            <div id="rightsection">
+                <img src="./public/assets/deve1.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="secsecond">
+            <span id="textgray">What i have done so far</span>
+            <h1 id="Skill">Objective:</h1>
+            <div id="mix">
+                <span>
+                    "Seeking a challenging entry-level position as a full-stack web developer, where I can leverage my
+                    strong foundation in front-end and back-end technologies to contribute to the development of
+                    innovative and user-friendly web applications. Eager to apply my academic knowledge and hands-on
+                    skills in HTML, CSS, JavaScript, and relevant frameworks, along with my understanding of server-side
+                    languages and databases, to create robust and efficient web solutions. Excited to collaborate with
+                    experienced professionals, learn new technologies, and contribute to a dynamic development team in a
+                    growth-oriented and collaborative environment."
+                </span>
+            </div>
+            <div id="box">
+
+            </div>
+
+            <h1>Education:</h1>
+            <div id="box1">
+                <div id="vertical">
+                    <img id="image-top" src="./public/assets/edu.png" alt="loding">
+                    <div id="vertical-title">MCA|2023</div>
+                    <div id="vertical-text">Shri Dadaji Institute of Technology & Sciences [RGPV]| 7.3CGPA</div>
+
+
+                </div>
+
+                <div id="vertical">
+                    <img id="image-top" src="./public/assets/edu.png" alt="loding">
+                    <div id="vertical-title">BCA|2021</div>
+                    <div id="vertical-text">Brijmohan mishra institute of medical & technical sciences[DAVV]| 6.4CGPA</div>
+
+                </div>
+                <div id="vertical"><img id="image-top" src="./public/assets/edu.png" alt="loding">
+                    <div id="vertical-title">12th|2018</div>
+                    <div id="vertical-text">MP State Board| 70.00</div>
+                </div>
+                <div id="vertical"><img id="image-top" src="./public/assets/edu.png" alt="loding">
+                    <div id="vertical-title">10th|2016</div>
+                    <div id="vertical-text">MP State Board| 81.00</div>
+                </div>
+            </div>
+            <div id="title-skill">
+                <h1>Skills:</h1>
+                <div id="box2">
+                    <div id="vertical">
+                        <img id="image-top2" src="./public/assets/html.png" alt="loding">
+                        <div id="vertical-title">HTML4|5</div>
+                        <div id="vertical-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore</div>
+
+
+                    </div>
+
+                    <div id="vertical">
+                        <img id="image-top" src="./public/assets/css.png" alt="loding">
+                        <div id="vertical-title">CSS3|Bootstrap</div>
+                        <!-- <div id="vertical-title">Bootstrap</div> -->
+                        <div id="vertical-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore</div>
+
+                    </div>
+                    <div id="vertical"><img id="image-top" src="./public/assets/jst.png" alt="loding">
+                        <div id="vertical-title" id="java">Java script</div>
+                        <div id="vertical-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore</div>
+                    </div>
+                    <div id="vertical"><img id="image-top" src="./public/assets/node.png" alt="loding">
+                        <div id="vertical-title" id="node">Node js|Exepress</div>
+                        <div id="vertical-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore</div>
+                    </div>
+                    <div id="vertical"><img id="image-top" src="./public/assets/mongo.png" alt="loding">
+                        <div id="vertical-title">MongoDB</div>
+                        <div id="vertical-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore</div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            </div>
+            <div id="title-about">
+                <h1>About:</h1>
+                <div id="box3">
+                    <div id="name1">Name:- Kunal Jatale</div>
+
+                    <div id="name2">Father's Name:- Mr Tarun Jatale</div>
+                    <div id="name3">Mother's Name:-Ms Seema Jatale </div>
+                    <div id="name4">Contact Me:- +91 9109645916</div>
+                    <!-- <div id="name5">Email Address:- Kunaljatale2001@gmail.com</div> -->
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <div id="logo">KUNAL's
+                <span id="por"> PORTFOLIO</span>
+                <button id="top">Topbar</button>
+            </div>
+
+        </div>
+        <div id="right"> &#169; copyright www.kunalsportfolio.com | All right reserved</div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full stack web developer.', 'Know Fundamentals of core java.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
